@@ -111,7 +111,7 @@ def add_user():
     }
     users.append(user)
 
-for _ in range(10):  # Добавляем 5 пользователей
+for _ in range(10):  
     add_user()
 
 for user in users:
