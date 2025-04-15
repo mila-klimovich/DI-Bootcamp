@@ -1,4 +1,4 @@
-CREATE TABLE items(
+CREATE TABLE items (
  item_id SERIAL PRIMARY KEY,
  item_name VARCHAR (20) NOT NULL,
  price SMALLINT NOT NULL
