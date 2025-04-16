@@ -41,3 +41,6 @@ SELECT * FROM students WHERE birth_date >= '1/01/2000'
 
 
 -- SELECT * FROM students
+SELECT * FROM students ORDER BY last_name ASC LIMIT 4
+SELECT * FROM students ORDER BY birth_date DESC LIMIT 1
+SELECT * FROM students LIMIT 3 OFFSET 2
