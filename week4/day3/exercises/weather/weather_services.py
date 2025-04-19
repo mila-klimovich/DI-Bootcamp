@@ -2,7 +2,7 @@ from pyowm.owm import OWM
 from pyowm.utils.config import get_default_config
 from datetime import datetime
 
-API_KEY = 'cd7049070c09bd18e1e84a739143ccab'  
+API_KEY = '///'  
 
 config_dict = get_default_config()
 config_dict['language'] = 'en'
