@@ -78,4 +78,65 @@ SELECT * FROM customer
 -- When we INSERT we need to make sure to provide a value that already exists in the reference table 
 
 DROP TABLE customer_review
--- SELECT * FROM customer_review
+-- easy to execute but needs to be checked. if other table reference it i'll get an error
+-- can also affect other tables
+
+SELECT * FROM rental
+
+SELECT COUNT(*) FROM rental
+WHERE return_date = NULL
+
+-- SELECT * FROM inventory
+-- SELECT * FROM film
+
+SELECT film.title, film.rental_rate 
+FROM rental
+JOIN inventory ON rental.inventory_id = inventory.inventory_id
+JOIN film ON inventory.film_id = film.film_id
+WHERE rental.return_date = NULL
+ORDER BY rental_rate DESC 
+LIMIT 30;
+
+-- SELECT * FROM film_actor
+
+SELECT film.title, film.description, actor.first_name, actor.last_name
+FROM film 
+JOIN film_actor ON film.film_id = film_actor.film_id
+JOIN actor ON film_actor.actor_id = actor.actor_id
+WHERE actor.first_name = 'Penelope' AND actor.last_name = 'Monroe'
+  AND film.description ILIKE '%sumo%';
+
+-- SELECT * FROM film
+-- SELECT * FROM category
+
+SELECT film.title, film.length, film.rating, category.name AS category
+FROM film
+JOIN film_category ON film.film_id = film_category.film_id
+JOIN category ON film_category.category_id = category.category_id
+WHERE film.length < 60
+  AND film.rating = 'R'
+  AND category.name = 'Documentary';
+
+-- SELECT * FROM payment
+
+SELECT film.title, payment.amount, rental.return_date, customer.first_name, customer.last_name
+FROM customer
+JOIN rental ON customer.customer_id = rental.customer_id
+JOIN payment ON rental.rental_id = payment.rental_id
+JOIN inventory ON rental.inventory_id = inventory.inventory_id
+JOIN film ON inventory.film_id = film.film_id
+WHERE customer.first_name = 'Matthew'
+  AND customer.last_name = 'Mahan'
+  AND payment.amount > 4.00
+  AND rental.return_date BETWEEN '2005-07-28' AND '2005-08-01';
+
+SELECT film.title, film.description, film.replacement_cost
+FROM customer
+JOIN rental ON customer.customer_id = rental.customer_id
+JOIN inventory ON rental.inventory_id = inventory.inventory_id
+JOIN film ON inventory.film_id = film.film_id
+WHERE customer.first_name = 'Matthew'
+  AND customer.last_name = 'Mahan'
+  AND film.description ILIKE '%boat%'
+ORDER BY film.replacement_cost DESC
+LIMIT 1;
