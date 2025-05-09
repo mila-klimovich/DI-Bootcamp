@@ -95,3 +95,11 @@ INSERT INTO actors (first_name, last_name, date_of_birth, number_oscars)
 VALUES('Matt','Ross','03/01/1970', 0);
 
 SELECT DISTINCT first_name FROM actors;
+
+INSERT INTO actors (first_name, last_name, date_of_birth, number_oscars) VALUES('George','Clooney','06/05/1961 ', 1);
+
+SELECT * FROM actors
+
+SELECT first_name, last_name, sum(number_oscars) FROM actors GROUP BY first_name, last_name;
+SELECT first_name, sum(number_oscars) FROM actors GROUP BY first_name;
+
