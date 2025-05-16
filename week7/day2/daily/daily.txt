@@ -1,0 +1,21 @@
+
+Case Study: How Amazon Uses Data Analytics in B2C
+Source: BusinessTechWeekly - Amazon’s Pricing Strategy https://www.businesstechweekly.com/online-sales-and-growth/grow-your-business/amazon-pricing-strategy/
+
+Step 1: 
+Amazon leverages data analytics across many aspects of its B2C operations. A major area is its dynamic pricing strategy, where the company adjusts prices of products in real time based on a wide variety of data points, including customer behavior, competitor pricing, inventory levels, time of day, and even weather conditions.
+
+Step 2: 
+Data used: Browsing history, purchase patterns, competitor data, sales velocity.
+Methods: Machine learning algorithms, A/B testing, predictive modeling.
+Outcomes: Real-time price changes, optimized recommendations, and inventory management.
+
+Step 3: 
+Without this deep data insight:
+Prices wouldn’t be competitive.
+Customers wouldn’t receive personalized offers.
+Inventory would be harder to manage, causing overstock or shortages.
+Data analysis allows Amazon to respond instantly to changing demand and stay ahead in a highly competitive B2C market.
+
+Step 4: 
+Amazon’s case shows how real-time data analysis enables smarter pricing, better customer experience, and operational efficiency. This is a prime example of data transforming decision-making in retail.
