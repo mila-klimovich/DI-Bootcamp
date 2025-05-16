@@ -1,0 +1,10 @@
+What is data analysis?
+Data analysis is the process of processing information to identify patterns, trends, and make decisions. It involves collecting, cleaning, visualizing, and interpreting data.
+
+Why is it important?
+Today, data is everywhere — from business to science. Its analysis helps companies understand customers, reduce costs, predict events, and quickly respond to changes.
+
+Where is it used?
+1. Business — companies analyze customer behavior and optimize advertising (e.g., Amazon and Netflix).
+2. Medicine — disease prognosis, treatment selection, epidemic analysis.
+3. Finance — risk assessment, fraud prevention, investment decisions.
