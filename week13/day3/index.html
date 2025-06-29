@@ -38,6 +38,22 @@
         <input type="hidden" name="user_id" value="12345">
         <input type="button" value="Click Me" onclick="alert('Hello!')">
         <p>This section contains information about the homepage.</p>
+
+        <button onclick="showAlert()">Click Me 2</button>
+        
+        <script>
+            function showAlert() {
+                alert("Button clicked!");
+            }
+        </script>
+
+        <button id="myButton">Click Me 3</button>
+        
+        <script>
+            document.getElementById("myButton").onclick = function () {
+                alert("Button clicked!");
+            };
+        </script>
     </section>
 
     <!-- Article -->

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>innerHTML Demo</title>
+</head>
+
+<body>
+    <h2>innerHTML Example</h2>
+    <!-- Original content -->
+    <div id="example">This is <strong>important</strong> text.</div>
+    <!-- Button to trigger the change -->
+    <button onclick="changeContent()">Change Content</button>
+    <script>
+        // Get the current HTML content and log it
+        var content = document.getElementById("example").innerHTML;
+        console.log("Original content:", content);
+        // Function to change the HTML content
+        function changeContent() {
+            document.getElementById("example").innerHTML = "New <em>content</em> here.";
+            console.log("Content changed!");
+        }
+    </script>
+</body>
+
+</html>
