@@ -10,7 +10,6 @@ This project is part of a Hackathon and allows me to practice real-world data sk
 
 - To understand how people feel about different tech companies based on Twitter data.
 - To compare sentiment (positive, neutral, negative) across companies.
-- To explore which keywords are most frequently mentioned in tweets for each brand.
 - To practice working with real-world datasets using Pandas, Seaborn, and Matplotlib.
 - To develop a strong storytelling approach based on data insights.
 
